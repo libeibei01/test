@@ -97,6 +97,7 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
     fun updateData(newItems: List<String>) {
         items.clear()
         items.addAll(newItems)
+        items.clear()
         notifyDataSetChanged()
     }
 
